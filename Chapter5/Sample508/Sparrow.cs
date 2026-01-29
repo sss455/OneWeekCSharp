@@ -1,16 +1,16 @@
-﻿namespace OneWeekCSharp.Chapter5.Sample508
-{
-    internal class Sparrow : Bird
-    {
-        //  コンストラクタ
-        public Sparrow() : base("すずめ")
-        {
-        }
+﻿namespace OneWeekCSharp.Chapter5.Sample508;
 
-        //  すずめが鳴く
-        public override void Sing()
-        {
-            Console.WriteLine("チュンチュン");
-        }
+internal class Sparrow : Bird
+{
+    // コンストラクタ
+    public Sparrow() : base("すずめ")
+    {
+    }
+
+    // オーバーライド
+    // すずめが鳴く
+    public override void Sing()
+    {
+        Console.WriteLine("チュンチュン");
     }
 }

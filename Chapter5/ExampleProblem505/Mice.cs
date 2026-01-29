@@ -1,15 +1,16 @@
-﻿namespace OneWeekCSharp.Chapter5.ExampleProblem505
+﻿namespace OneWeekCSharp.Chapter5.ExampleProblem505;
+
+internal class Mice : Mammals
 {
-    internal class Mice : Mammals
+    public Mice()
     {
-        public Mice()
-        {
-            name = "ネズミ";
-        }
-        //  吠える
-        public override void Bark()
-        {
-            Console.WriteLine("チューチュー");
-        }
+        name = "ネズミ";
+    }
+
+    // オーバーライド
+    // 吠える
+    public override void Bark()
+    {
+        Console.WriteLine("チューチュー");
     }
 }

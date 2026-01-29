@@ -1,8 +1,8 @@
-﻿namespace OneWeekCSharp.Chapter5.Sample510
+﻿namespace OneWeekCSharp.Chapter5.Sample510;
+
+// インターフェイス
+internal interface IEmail
 {
-    internal interface IEmail
-    {
-        //  メールを送る
-        void SendMail(string address);
-    }
+    // メールを送る
+    void SendMail(string address);
 }

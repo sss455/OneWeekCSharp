@@ -1,10 +1,9 @@
-﻿namespace OneWeekCSharp.Chapter5.ExampleProblem504
+﻿namespace OneWeekCSharp.Chapter5.ExampleProblem504;
+
+internal class Ship
 {
-    internal class Ship
+    public void Sail()
     {
-        public void Sail()
-        {
-            Console.WriteLine("航行する");
-        }
+        Console.WriteLine("航行する");
     }
 }

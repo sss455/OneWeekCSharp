@@ -1,19 +1,16 @@
-﻿namespace OneWeekCSharp.Chapter5.Sample503
+﻿namespace OneWeekCSharp.Chapter5.Sample503;
+
+internal class ExCalculator : Calculator // Calculatorクラスを継承した、ExCalculatorクラス
 {
-    //  Calculatorクラスを継承した、ExCalculatorクラス
-    internal class ExCalculator : Calculator
+    // 掛け算
+    public void Mul()
     {
-        //  掛け算
-        public void Mul()
-        {
-            Console.WriteLine("{0} * {1} = {2}",
-                    num1, num2, num1 * num2);
-        }
-        //  割り算
-        public void Div()
-        {
-            Console.WriteLine("{0} / {1} = {2}",
-                    num1, num2, num1 / num2);
-        }
+        Console.WriteLine("{0} * {1} = {2}", num1, num2, num1 * num2);
+    }
+
+    // 割り算
+    public void Div()
+    {
+        Console.WriteLine("{0} / {1} = {2}", num1, num2, num1 / num2);
     }
 }

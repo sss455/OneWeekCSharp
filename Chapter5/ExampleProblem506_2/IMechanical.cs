@@ -1,8 +1,7 @@
-﻿namespace OneWeekCSharp.Chapter5.ExampleProblem506_2
+﻿namespace OneWeekCSharp.Chapter5.ExampleProblem506_2;
+
+// メカニカル インターフェース
+internal interface IMechanical
 {
-    //  メカニカルインターフェース
-    internal interface IMechanical
-    {
-        void Maintain();
-    }
+    void Maintain();
 }

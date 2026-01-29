@@ -1,8 +1,8 @@
-﻿namespace OneWeekCSharp.Chapter5.Sample511
+﻿namespace OneWeekCSharp.Chapter5.Sample511;
+
+// インターフェイス２
+internal interface IFuncs2
 {
-    internal interface IFuncs2
-    {
-        void Func2();
-        void Func3();
-    }
+    void Func2();
+    void Func3();
 }

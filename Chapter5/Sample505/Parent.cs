@@ -1,10 +1,9 @@
-﻿namespace OneWeekCSharp.Chapter5.Sample505
+﻿namespace OneWeekCSharp.Chapter5.Sample505;
+
+internal class Parent
 {
-    internal class Parent
+    public virtual void Foo()
     {
-        public virtual void Foo()
-        {
-            Console.WriteLine("親クラスのFoo()メソッド");
-        }
+        Console.WriteLine("親クラスのFoo()メソッド");
     }
 }

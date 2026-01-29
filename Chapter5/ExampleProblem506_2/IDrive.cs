@@ -1,8 +1,7 @@
-﻿namespace OneWeekCSharp.Chapter5.ExampleProblem506_2
+﻿namespace OneWeekCSharp.Chapter5.ExampleProblem506_2;
+
+// ドライブ インターフェース
+internal interface IDrive
 {
-    //  ドライブインターフェース
-    internal interface IDrive
-    {
-        void Drive();
-    }
+    void Drive();
 }
