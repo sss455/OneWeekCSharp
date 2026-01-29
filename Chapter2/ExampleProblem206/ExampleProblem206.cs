@@ -1,25 +1,25 @@
-﻿namespace OneWeekCSharp.Chapter2.ExampleProblem206
+﻿namespace OneWeekCSharp.Chapter2.ExampleProblem206;
+
+internal class ExampleProblem206
 {
-    internal class ExampleProblem206
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        // H2Oの温度を乱数で決める
+        Console.Write("H2Oの温度:");
+        // コンソールから温度を入力させる
+        double temperature = double.Parse(Console.ReadLine()!);
+
+        if (temperature >= 100.0)
         {
-            //  H2Oの温度を乱数で決める
-            Console.Write("H2Oの温度:");
-            //  コンソールから温度を入力させる
-            double temperature = double.Parse(Console.ReadLine());
-            if (temperature >= 100.0)
-            {
-                Console.WriteLine("気体");
-            }
-            else if (temperature > 0.0)
-            {
-                Console.WriteLine("液体");
-            }
-            else
-            {
-                Console.WriteLine("固体");
-            }
+            Console.WriteLine("気体");
+        }
+        else if (temperature > 0.0)
+        {
+            Console.WriteLine("液体");
+        }
+        else
+        {
+            Console.WriteLine("固体");
         }
     }
 }

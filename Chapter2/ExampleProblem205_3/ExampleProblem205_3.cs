@@ -4,9 +4,10 @@
     {
         static void Main(string[] args)
         {
-            //  文字列を入力
+            // 文字列を入力
             Console.Write("文字列を入力:");
-            string s = Console.ReadLine();
+            string s = Console.ReadLine()!;
+
             if (s.Equals("Hello", StringComparison.OrdinalIgnoreCase))
             {
                 Console.WriteLine("Helloが入力されました。");

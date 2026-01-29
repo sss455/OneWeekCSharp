@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            //  月を入力
+            // 月を入力
             Console.Write("月(1～12)を入力して下さい:");
-            int m = int.Parse(Console.ReadLine());
+            int m = int.Parse(Console.ReadLine()!);
             string d = "";
+
             if (m == 2)
             {
                 d = "28か29";

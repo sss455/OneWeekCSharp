@@ -1,19 +1,28 @@
-﻿namespace OneWeekCSharp.Chapter2.Sample207
+﻿namespace OneWeekCSharp.Chapter2.Sample207;
+
+internal class Sample207
 {
-    internal class Sample207
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        // キーワードから数値を入力
+        Console.Write("整数値を入力:");
+
+        //int a = int.Parse(Console.ReadLine());
+        if (int.TryParse(Console.ReadLine(), out int a))
         {
-            //  キーワードから数値を入力
-            Console.Write("整数値を入力:");
-            int a = int.Parse(Console.ReadLine());
             Console.WriteLine("a=" + a);
-            //  入力した値が、正の数かどうかを調べる
+
+            // 入力した値が、正の数かどうかを調べる
             if (a > 0)
             {
-                //  正の数だった場合に実行
+                // 正の数だった場合に実行
                 Console.WriteLine("aは正の数です。");
             }
-        }
+
+        } 
+        else 
+        {
+            Console.WriteLine("aは数値ではありません");
+        };
     }
 }
