@@ -1,19 +1,20 @@
-﻿namespace OneWeekCSharp.Chapter3.ExampleProblem301_2
+﻿namespace OneWeekCSharp.Chapter3.ExampleProblem301_2;
+
+internal class ExampleProblem301_2
 {
-    internal class ExampleProblem301_2
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.Write("*の数を入力:");
+        // 整数値を入力
+        int n = int.Parse(Console.ReadLine()!);
+
+
+        int i = 0;
+        while (i < n)
         {
-            Console.Write("*の数を入力:");
-            //  整数値を入力
-            int n = int.Parse(Console.ReadLine());
-            int i = 0;
-            while (i < n)
-            {
-                Console.Write("*");
-                i++;
-            }
-            Console.WriteLine();
+            Console.Write("*");
+            i++;
         }
+        Console.WriteLine();
     }
 }

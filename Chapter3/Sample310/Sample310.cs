@@ -1,20 +1,32 @@
-﻿namespace OneWeekCSharp.Chapter3.Sample310
+﻿namespace OneWeekCSharp.Chapter3.Sample310;
+
+internal class Sample310
 {
-    internal class Sample310
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        // p.145 ジャグ配列
+        int[][] a = new int[][] 
+            { 
+                new int[] { 0, 1 },
+                new int[] { 2 },
+                new int[] { 3, 4, 5, 6 }
+            };
+
+        //int[][] b =
+        //    {
+        //        [ 0, 1 ],
+        //        [ 2 ],
+        //        [ 3, 4, 5, 6 ],
+        //    };
+
+        // 要素の表示
+        for (int m = 0; m < a.Length; m++)
         {
-            int[][] a = new int[][] { new int[] { 0, 1 },
-                new int[] { 2 }, new int[] { 3, 4, 5, 6 } };
-            //  要素の表示
-            for (int m = 0; m < a.Length; m++)
+            for (int n = 0; n < a[m].Length; n++)
             {
-                for (int n = 0; n < a[m].Length; n++)
-                {
-                    Console.Write(a[m][n] + " ");
-                }
-                Console.WriteLine();
+                Console.Write(a[m][n] + " ");
             }
+            Console.WriteLine();
         }
     }
 }
