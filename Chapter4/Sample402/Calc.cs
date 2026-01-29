@@ -1,16 +1,16 @@
-﻿namespace OneWeekCSharp.Chapter4.Sample402
+﻿namespace OneWeekCSharp.Chapter4.Sample402;
+
+internal class Calc
 {
-    internal class Calc
+    // 2つの整数の引数の和を求める
+    public int Add(int a, int b)
     {
-        //  2つの整数の引数の和を求める
-        public int Add(int a, int b)
-        {
-            return a + b;
-        }
-        //  3つの整数の引数の和を求める
-        public int Add(int a, int b, int c)
-        {
-            return a + b + c;
-        }
+        return a + b;
+    }
+
+    // 3つの整数の引数の和を求める
+    public int Add(int a, int b, int c)
+    {
+        return a + b + c;
     }
 }

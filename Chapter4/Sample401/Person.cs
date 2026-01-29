@@ -1,21 +1,22 @@
-﻿namespace OneWeekCSharp.Chapter4.Sample401
+﻿namespace OneWeekCSharp.Chapter4.Sample401;
+
+internal class Person
 {
-    internal class Person
+    //  名前（フィールド）
+    public string name = string.Empty;
+    //  年齢（フィールド）
+    public int age = 0;
+
+    //  プロパティの設定
+    public void SetAgeAndName(string name, int age)
     {
-        //  名前（フィールド）
-        public string name = "";
-        //  年齢（フィールド）
-        public int age = 0;
-        //  情報の表示（メソッド）
-        public void ShowAgeAndName()
-        {
-            Console.WriteLine("名前:{0} 年齢:{1}", name, age);
-        }
-        //  情報の設定
-        public void SetAgeAndName(string name, int age)
-        {
-            this.name = name;
-            this.age = age;
-        }
+        this.name = name;
+        this.age = age;
+    }
+
+    //  情報の表示（メソッド）
+    public void ShowAgeAndName()
+    {
+        Console.WriteLine("名前:{0} 年齢:{1}", name, age);
     }
 }
